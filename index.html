@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora — Observability for firmware devices</title>
+    <meta
+      name="description"
+      content="Nexora is the observability layer for the physical world. Detect firmware crashes, analyze errors, and monitor device fleets in production."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="nav">
+      <div class="nav__inner">
+        <div class="brand">Nexora</div>
+
+        <nav class="nav__links">
+          <a href="#product">Product</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#security">Security</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <h1>Observability for firmware devices</h1>
+          <p>
+            Nexora is the observability layer for the physical world. Detect
+            crashes, analyze errors, and monitor firmware fleets in production —
+            with a lightweight SDK built for constrained devices.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Request access</a>
+            <a class="btn btn--secondary" href="#contact">Book a demo</a>
+          </div>
+
+          <div class="hero__meta">
+            Built for ESP32, STM32, and Linux-based devices.
+          </div>
+        </div>
+      </section>
+
+      <!-- Product -->
+      <section id="product" class="section section--soft">
+        <div class="container">
+          <div class="section__title">
+            <h2>Built for teams shipping devices</h2>
+            <p>
+              Firmware debugging shouldn’t require guessing, shipping devices
+              back, or waiting days for reproduction.
+            </p>
+          </div>
+
+          <div class="grid3">
+            <div class="card">
+              <h3>Crash analytics</h3>
+              <p>
+                Capture and group firmware crashes across your fleet. Identify
+                affected devices and versions instantly.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Error monitoring</h3>
+              <p>
+                Track error codes, trends, and regressions. Understand what
+                breaks after every release.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Fleet health</h3>
+              <p>
+                See which devices are online, unstable, or impacted. Know your
+                fleet status at a glance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section id="how" class="section">
+        <div class="container">
+          <div class="section__title">
+            <h2>How it works</h2>
+            <p>
+              Integrate in minutes. Get real production visibility in hours.
+            </p>
+          </div>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step__num">1</div>
+              <div class="step__title">Install SDK</div>
+              <div class="step__desc">
+                Add Nexora to your firmware or Linux device in under 30 minutes.
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step__num">2</div>
+              <div class="step__title">Send events</div>
+              <div class="step__desc">
+                Capture crashes, errors, and heartbeats with minimal bandwidth.
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step__num">3</div>
+              <div class="step__title">Debug with insight</div>
+              <div class="step__desc">
+                Use dashboards and alerts to fix issues before customers notice.
+              </div>
+            </div>
+          </div>
+
+          <div class="codeblock">
+            <div class="codeblock__top">
+              <span>Quickstart (Python)</span>
+              <span class="muted">nexora.init()</span>
+            </div>
+            <pre><code>import nexora
+
+nexora.init(
+  api_key="YOUR_KEY",
+  device_id="ABC123",
+  firmware_version="1.2.3"
+)
+
+nexora.capture_error(
+  "I2C_TIMEOUT",
+  message="Sensor read failed"
+)</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="section section--soft">
+        <div class="container">
+          <div class="section__title">
+            <h2>Simple pricing</h2>
+            <p>Start free. Scale with your fleet.</p>
+          </div>
+
+          <div class="pricing">
+            <div class="pricecard">
+              <h3>Free</h3>
+              <div class="price">€0</div>
+              <div class="price__sub">Up to 10 devices</div>
+              <ul>
+                <li>Crash & error events</li>
+                <li>7-day retention</li>
+                <li>Basic dashboard</li>
+              </ul>
+            </div>
+
+            <div class="pricecard">
+              <h3>Starter</h3>
+              <div class="price">€49</div>
+              <div class="price__sub">Up to 50 devices</div>
+              <ul>
+                <li>30-day retention</li>
+                <li>Email alerts</li>
+                <li>Firmware filtering</li>
+              </ul>
+            </div>
+
+            <div class="pricecard pricecard--featured">
+              <h3>Pro</h3>
+              <div class="price">€199</div>
+              <div class="price__sub">Up to 500 devices</div>
+              <ul>
+                <li>90-day retention</li>
+                <li>Advanced alerts</li>
+                <li>API access</li>
+              </ul>
+            </div>
+
+            <div class="pricecard">
+              <h3>Scale</h3>
+              <div class="price">€499</div>
+              <div class="price__sub">Up to 2000 devices</div>
+              <ul>
+                <li>180-day retention</li>
+                <li>Team access</li>
+                <li>Priority support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Security -->
+      <section id="security" class="section">
+        <div class="container">
+          <div class="section__title">
+            <h2>Security by default</h2>
+            <p>
+              Built for B2B teams. Minimal data. Strong defaults.
+            </p>
+          </div>
+
+          <div class="grid2">
+            <div class="card">
+              <h3>Privacy-first</h3>
+              <p>
+                Nexora collects no personal user data by default. You control
+                what your devices send.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Secure ingestion</h3>
+              <p>
+                TLS encryption, API key authentication, and retention controls
+                designed for GDPR-ready deployments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section--soft">
+        <div class="container contact">
+          <div>
+            <h2>Get early access</h2>
+            <p>
+              Want to see Nexora on your fleet? Send a message and we’ll get back
+              to you.
+            </p>
+
+            <div class="contact__meta">
+              <div><strong>Email:</strong> nexora.team@gmail.com</div>
+              <div><strong>Location:</strong> Milan, Italy</div>
+            </div>
+          </div>
+
+          <form class="form" onsubmit="return false;">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+
+            <label>
+              Work email
+              <input type="email" placeholder="name@company.com" />
+            </label>
+
+            <label>
+              Message
+              <textarea placeholder="Tell us about your devices (fleet size, stack, pain points)"></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="button">
+              Send message
+            </button>
+
+            <div class="form__note muted">
+              This is a static demo form. When you’re ready, we’ll connect it to
+              Formspree or a backend.
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© <span id="year"></span> Nexora</div>
+        <div class="muted">Built for the physical world</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora — Pricing</title>
+    <meta
+      name="description"
+      content="Simple pricing that scales with your device fleet."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="brand" href="index.html">Nexora</a>
+
+        <nav class="nav__links">
+          <a href="product.html">Product</a>
+          <a class="active" href="pricing.html">Pricing</a>
+          <a href="docs.html">Docs</a>
+          <a href="security.html">Security</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Pricing</h1>
+          <p>Start free. Scale with your fleet.</p>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="pricing">
+            <div class="pricecard">
+              <h3>Free</h3>
+              <div class="price">€0</div>
+              <div class="price__sub">Up to 10 devices</div>
+              <ul>
+                <li>Crash & error events</li>
+                <li>7-day retention</li>
+                <li>Basic dashboard</li>
+              </ul>
+            </div>
+
+            <div class="pricecard">
+              <h3>Starter</h3>
+              <div class="price">€49</div>
+              <div class="price__sub">Up to 50 devices</div>
+              <ul>
+                <li>30-day retention</li>
+                <li>Email alerts</li>
+                <li>Firmware filtering</li>
+              </ul>
+            </div>
+
+            <div class="pricecard pricecard--featured">
+              <h3>Pro</h3>
+              <div class="price">€199</div>
+              <div class="price__sub">Up to 500 devices</div>
+              <ul>
+                <li>90-day retention</li>
+                <li>Advanced alerts</li>
+                <li>API access</li>
+              </ul>
+            </div>
+
+            <div class="pricecard">
+              <h3>Scale</h3>
+              <div class="price">€499</div>
+              <div class="price__sub">Up to 2000 devices</div>
+              <ul>
+                <li>180-day retention</li>
+                <li>Team access</li>
+                <li>Priority support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-32 center muted">
+            Need enterprise pricing? Email us at <strong>nexora.hqd@gmail.com</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© <span id="year"></span> Nexora</div>
+        <div class="muted">Observability for the physical world</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

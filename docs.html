@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora — Docs</title>
+    <meta
+      name="description"
+      content="Nexora documentation and quickstart."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="brand" href="index.html">Nexora</a>
+
+        <nav class="nav__links">
+          <a href="product.html">Product</a>
+          <a href="pricing.html">Pricing</a>
+          <a class="active" href="docs.html">Docs</a>
+          <a href="security.html">Security</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Docs</h1>
+          <p>Quickstart documentation for early access users.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container docs">
+          <div class="card">
+            <h3>Quickstart</h3>
+            <p class="muted">
+              Nexora SDK is designed to be lightweight and offline-friendly.
+            </p>
+
+            <div class="codeblock mt-16">
+              <div class="codeblock__top">
+                <span>Python</span>
+                <span class="muted">Install + init</span>
+              </div>
+              <pre><code>pip install nexora
+
+import nexora
+
+nexora.init(
+  api_key="YOUR_KEY",
+  device_id="ABC123",
+  firmware_version="1.2.3"
+)</code></pre>
+            </div>
+
+            <div class="codeblock mt-16">
+              <div class="codeblock__top">
+                <span>Send an error</span>
+                <span class="muted">capture_error()</span>
+              </div>
+              <pre><code>nexora.capture_error(
+  "I2C_TIMEOUT",
+  message="Sensor read failed"
+)</code></pre>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Event model</h3>
+            <p class="muted">
+              Nexora supports 3 core event types in V1:
+            </p>
+            <ul class="muted">
+              <li>crash</li>
+              <li>error</li>
+              <li>heartbeat</li>
+            </ul>
+
+            <p class="muted mt-16">
+              For access, email: <strong>nexora.hqd@gmail.com</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© <span id="year"></span> Nexora</div>
+        <div class="muted">Observability for the physical world</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

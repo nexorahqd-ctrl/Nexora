@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora — Security</title>
+    <meta
+      name="description"
+      content="Security and privacy built for B2B firmware observability."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="brand" href="index.html">Nexora</a>
+
+        <nav class="nav__links">
+          <a href="product.html">Product</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="docs.html">Docs</a>
+          <a class="active" href="security.html">Security</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Security</h1>
+          <p>Security and privacy are default, not optional.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid2">
+            <div class="card">
+              <h3>Encryption</h3>
+              <p>
+                TLS encryption for data in transit. Secure storage practices for
+                data at rest.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>API keys</h3>
+              <p>
+                Project keys for ingestion with support for rotation and access
+                control.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Privacy-first</h3>
+              <p>
+                Nexora collects no personal user data by default. Customers
+                control what devices send.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Retention controls</h3>
+              <p>
+                Plan-based retention and deletion policies designed for GDPR
+                readiness.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-32 center">
+            <p class="muted">
+              Security questions? Contact: <strong>nexora.hqd@gmail.com</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© <span id="year"></span> Nexora</div>
+        <div class="muted">Observability for the physical world</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
